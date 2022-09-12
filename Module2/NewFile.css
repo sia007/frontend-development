@@ -345,7 +345,7 @@ and (min-device-width : 100px)
            height:auto;
            font-size: 2em;
            font-weight: bolder;
-           text-align:left;
+           text-align:center;
       position: relative;
         border: 1px solid black ;
           margin-top:0;
