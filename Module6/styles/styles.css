@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+.fail {
+    color:  #91192b;
+    border-style: solid;
+    
+    border-color: #91192b;
+text-align:center;
+padding:2px;
+width:50%;
+margin:auto;
+  }
+
+.success {
+    color: #258a4d;
+    border-style: solid;
+    border-color: #258a4d;
+    text-align:center;
+padding:2px;
+width:50%;
+margin:auto;
+    
+}
