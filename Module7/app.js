@@ -54,7 +54,7 @@ function ShoppingListCheckOffService() {
   }
 
   service.buyItems = function(index) {
-	console.log(index);
+
 	            var s = buy.splice(index, 1)[0];
             
             
