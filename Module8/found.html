@@ -1,0 +1,3 @@
+<ul class="col-xs-12"  ng-if="narrow.foundItems[0]!==1">
+    <li ng-repeat="item in narrow.foundItems">{{item.name}}, {{item.short_name}}, {{item.description}} <button ng-click="narrow.onRemove({index:$index})">Don't want this one!</button></li>
+</ul>
