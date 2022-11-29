@@ -1,0 +1,11 @@
+
+
+<h1>Menu Categories</h1>
+<p>
+  <a class='btn btn-default' ui-sref='home'>Go Home</a>
+</p>
+<ul>
+   <li ng-repeat="item in categories.items" ui-sref="categories.items({itemId: item.short_name})">
+        {{ item.name }}
+    </li>
+</ul>
