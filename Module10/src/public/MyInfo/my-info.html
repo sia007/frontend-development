@@ -1,0 +1,70 @@
+<div class="container">
+  <div ng-if="infoCtrl.userInfo.firstName !== undefined">
+    <h2>Your Information</h2>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        First name:
+      </div>
+      <div class="col-sm-5">
+        {{ infoCtrl.userInfo.firstName }}
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        Last name:
+      </div>
+      <div class="col-sm-5">
+        {{ infoCtrl.userInfo.lastName }}
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        Email:
+      </div>
+      <div class="col-sm-5">
+        {{ infoCtrl.userInfo.email }}
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        Phone number:
+      </div>
+      <div class="col-sm-5">
+        {{ infoCtrl.userInfo.phone }}
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        Favorite dish:
+      </div>
+      
+      <br>
+      <br>
+      <div class="col-sm-5">
+        {{ infoCtrl.userInfo.dish }}: {{ infoCtrl.userInfo.data.name }}
+        <br>
+        <br>
+        
+        Description: {{infoCtrl.userInfo.data.description}}
+        
+        <br>
+        <br>
+        <img class="img-responsive" width="250" height="150"
+             
+             ng-src="images/menu/{{infoCtrl.category}}/{{infoCtrl.userInfo.dish}}.jpg" alt="{{infoCtrl.userInfo.data.description}}">
+      
+      </div>
+      
+       
+    </div>
+  </div>
+  <span ng-if="infoCtrl.userInfo.firstName === undefined">
+    Not Signed Up Yet. <a ui-sref="public.signup">Sign Up Now!</a>
+  </span>
+</div>
